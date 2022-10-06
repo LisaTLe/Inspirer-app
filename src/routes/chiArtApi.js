@@ -1,4 +1,5 @@
 import * as React from 'react';
+import "../App.css",
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -17,10 +18,7 @@ export const search = async (query) => {
 
     return res.json();
 
-}
-
-
-
+};
 
 
 return (
@@ -54,7 +52,7 @@ return (
             </Card>
           );
         }
-        
+
     </div>
 
 )
