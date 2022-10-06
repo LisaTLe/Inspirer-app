@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import logo from "./logo.svg";
 import "./App.css";
-import search from "./chiArtApi"
+import search from "../routes/chiArtApi.js"
 
 import {
   Typography,
