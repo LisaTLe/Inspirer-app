@@ -1,4 +1,5 @@
-import React from "react";
+import * as React from 'react';
+
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -14,13 +15,15 @@ import {
   Toolbar,
   Container,
 } from "@material-ui/core";
-import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
 import Button from "@mui/material/Button";
 import { purple } from "@mui/material/colors";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Paper from "@mui/material/Paper";
 import FormLabel from "@mui/material/FormLabel";
+import Box from '@mui/material/Box';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
 
 function App() {
   return (
@@ -32,8 +35,7 @@ function App() {
         <CssBaseline />
         <AppBar position="relative">
           <Toolbar>
-            <PhotoCameraIcon />
-            <Typography variant="h6">NAV BAR</Typography>
+            <Typography variant="h6"></Typography>
           </Toolbar>
         </AppBar>
         <main>
