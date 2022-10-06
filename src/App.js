@@ -2,6 +2,7 @@ import * as React from 'react';
 
 // import logo from "./logo.svg";
 import "./App.css";
+import search from "../routes/chiArtApi.js"
 
 import {
   Typography,
@@ -25,17 +26,27 @@ import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 
+
 function App() {
+  
   return (
     <>
+    
       <div color="accent">
         <Typography variant="h5" align="left" color="textSecondary" paragraph>
           THIS IS APPLICATION TITLE
         </Typography>
         <CssBaseline />
         <AppBar position="relative">
+          <tabs align="center"> 
+          <Tab label="Generate"/>
+          <Tab label="Profile"/>
+          <Tab label="Explore Pinterest"/>
+          <Tab label="Shop"/>
+          
+          </tabs>
           <Toolbar>
-            <Typography variant="h6"></Typography>
+            <Typography variant="h6"> </Typography>
           </Toolbar>
         </AppBar>
         <main>
@@ -49,6 +60,11 @@ function App() {
               >
                 ART
               </Typography>
+              </Container>
+              </div>
+
+              <div>
+              <Container>
               <Typography
                 variant="h5"
                 align="center"
