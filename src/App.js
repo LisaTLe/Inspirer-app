@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import logo from "./logo.svg";
 import "./App.css";
-import search from "../routes/chiArtApi.js"
+import Search from "./routes/chiArtApi.js"
 
 import {
   Typography,
@@ -48,6 +48,8 @@ function App() {
                 color="textPrimary"
                 gutterBottom
               >
+               
+
                 ART
               </Typography>
               <Typography
