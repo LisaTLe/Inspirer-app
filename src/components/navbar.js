@@ -18,9 +18,11 @@ import Box from '@mui/material/Box';
 export default function navbar() {
   return (
     <>
+    <Box pt={3} pl={3} pb={3}>
       <Typography variant="h5" align="left" color="textSecondary" paragraph>
-        THIS IS APPLICATION TITLE
+        INSPIRER: An Art & Design Generator
       </Typography>
+    </Box>
       <CssBaseline />
       <AppBar position="relative">
         <tabs align="center">
