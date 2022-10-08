@@ -2,7 +2,11 @@ import * as React from 'react';
 
 // import logo from "./logo.svg";
 import "./App.css";
-import Search from "./routes/chiArtApi.js"
+
+import { search } from "./routes/chiArtApi";
+import Search from "./routes/search-art";
+import SearchResults from "./routes/searchresults-art";
+
 
 import {
   Typography,
@@ -74,6 +78,7 @@ function App() {
                 paragraph
               >
                 TEST TEST TEST TEST
+                
               </Typography>
             </Container>
           </div>
