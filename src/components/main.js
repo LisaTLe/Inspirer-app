@@ -1,7 +1,4 @@
 import React from "react";
-
-
-
 import {
   Typography,
   AppBar,
@@ -29,6 +26,7 @@ import Tab from '@mui/material/Tab';
 function Main() {
     return (
 <div color="accent">
+<<<<<<< HEAD
       <Box pt={3} pl={3} pb={1.7}>
         <Typography variant="h5" align="left" color="textSecondary" paragraph>
         INSPIRER: An Art & Design Generator
@@ -49,6 +47,12 @@ function Main() {
           </Toolbar>
         </AppBar>
         <main>
+=======
+       <main>
+    <div>
+        
+    </div>
+>>>>>>> e8c05ae447478cb6677a2f7c98f5160a14fa43b6
           <div>
             <Container maxWidth="sm">
               <Typography
@@ -82,3 +86,5 @@ function Main() {
 }
 
 export default Main;
+
+
