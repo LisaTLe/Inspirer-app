@@ -1,6 +1,10 @@
 import * as React from "react";
 import Main from "./components/main";
-import Colors from "./components/colorGenerator/generator";
+import Colors from "./components/colorGenerator/generatorTab";
+import Colors2 from "./components/colorGenerator/generatorTab2";
+import Colors3 from "./components/colorGenerator/generatorTab3";
+import Colors4 from "./components/colorGenerator/generatorTab4";
+import Colors5 from "./components/colorGenerator/generatorTab5";
 import Navbar from "./components/navbar";
 // import logo from "./logo.svg";
 import "./App.css";
@@ -9,7 +13,6 @@ import { search } from "./routes/chiArtApi";
 import Search from "./routes/search-art";
 import SearchResults from "./routes/searchresults-art";
 import { useState, useEffect } from "react";
-
 
 import {
   Typography,
@@ -29,13 +32,11 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Paper from "@mui/material/Paper";
 import FormLabel from "@mui/material/FormLabel";
-import Box from '@mui/material/Box';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-
+import Box from "@mui/material/Box";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
 
 function App() {
-
   const [results, setResults] = useState(null);
   const [query, setQuery] = useState("");
   const [loading, setLoading] = useState(false);
@@ -66,12 +67,24 @@ function App() {
   }, [query]);
 
   return (
-    <div id="root">
-      <Navbar />
-      <Main />
-      <Colors />
-      <Search query={query} onChange={(e) => setQuery(e.target.value)} />
-      <SearchResults results={results} loading={loading} />
+    <div>
+      <div>
+        <Navbar />
+        <Main />
+      </div>
+
+      <div>
+        <Colors />
+        <Colors2 />
+        <Colors3 />
+        <Colors4 />
+        <Colors5 />
+      </div>
+
+      <div>
+        <Search query={query} onChange={(e) => setQuery(e.target.value)} />
+        <SearchResults results={results} loading={loading} />
+      </div>
     </div>
   );
 }
