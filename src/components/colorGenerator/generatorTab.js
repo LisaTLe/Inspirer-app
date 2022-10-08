@@ -11,7 +11,7 @@ const RandomColor = () => {
     [r, g, b]
       .map((x) => {
         const hex = x.toString(16);
-        return hex.length === 1 ? "0" + hex : hex;
+        return hex.length === 5 ? "0" + hex : hex;
       })
       .join("");
 
@@ -25,10 +25,12 @@ const RandomColor = () => {
   };
 
   return (
-    <div style={{ backgroundColor: color }} className="container">
-      <button style={{ color: color }} onClick={handleGenerate}>
-        {color}
-      </button>
+    <div>
+      <div style={{ backgroundColor: color }} className="container">
+        <button style={{ color: color }} onClick={handleGenerate}>
+          {color}
+        </button>
+      </div>
     </div>
   );
 };
