@@ -26,10 +26,8 @@ import Tab from '@mui/material/Tab';
 function Main() {
     return (
 <div color="accent">
-       <main>
-    <div>
-        
-    </div>
+     
+        <main>
           <div>
             <Container maxWidth="sm">
               <Typography

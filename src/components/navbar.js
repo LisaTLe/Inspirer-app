@@ -11,8 +11,9 @@ import {
   Toolbar,
   Container,
 } from "@material-ui/core";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Box from '@mui/material/Box';
 
 export default function navbar() {
   return (
