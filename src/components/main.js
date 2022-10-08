@@ -51,7 +51,7 @@ function Main() {
                 color="textSecondary"
                 paragraph
               >
-                TEST TEST TEST TEST
+                Begin Your Creation:
               </Typography>
             </Container>
           </div>

@@ -14,28 +14,6 @@ import Search from "./routes/search-art";
 import SearchResults from "./routes/searchresults-art";
 import { useState, useEffect } from "react";
 
-import {
-  Typography,
-  AppBar,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  CssBaseline,
-  Grid,
-  Toolbar,
-  Container,
-} from "@material-ui/core";
-import Button from "@mui/material/Button";
-import { purple } from "@mui/material/colors";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import Paper from "@mui/material/Paper";
-import FormLabel from "@mui/material/FormLabel";
-import Box from "@mui/material/Box";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-
 function App() {
   const [results, setResults] = useState(null);
   const [query, setQuery] = useState("");
@@ -68,22 +46,26 @@ function App() {
 
   return (
     <div>
-      <div>
+      <div className="navbar">
         <Navbar />
+      </div>
+      <div className="main">
         <Main />
       </div>
 
-      <div>
-        <Colors />
-        <Colors2 />
-        <Colors3 />
-        <Colors4 />
-        <Colors5 />
-      </div>
+      <div className="inspire-container">
+        <div className="color-generator">
+          <Colors />
+          <Colors2 />
+          <Colors3 />
+          <Colors4 />
+          <Colors5 />
+        </div>
 
-      <div>
-        <Search query={query} onChange={(e) => setQuery(e.target.value)} />
-        <SearchResults results={results} loading={loading} />
+        <div className="art-Api">
+          <Search query={query} onChange={(e) => setQuery(e.target.value)} />
+          <SearchResults results={results} loading={loading} />
+        </div>
       </div>
     </div>
   );

@@ -1,32 +1,32 @@
 .container {
-    height: 15vh;
-    width: 100vh;
-    display: grid;
-    place-items: center;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  button {
-    padding: 5px 25px;
-    font-size: 30px;
-    font-weight: 700;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    border: none;
-    background-color: white;
-    border-radius: 11px;
-    cursor: pointer;
-    box-shadow: 0 5px 12px 12px rgba(0, 0, 0, 0.15);
-    transform: translate(0, -5px, 5px);
-    transition: color 1.5s ease-in-out, transform 0.3s ease-in-out,
-      box-shadow 0.3s ease-in-out;
-  }
-  
-  button:focus {
-    outline: none;
-  }
-  
-  button:hover {
-    transform: translate3d(0, 0, 0);
-    box-shadow: none;
-  }
-  
+  height: 20vh;
+  width: 100%;
+  display: grid;
+  border-radius: 5rem;
+  place-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+button {
+  padding: 5px 25px;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+  background-color: white;
+  border-radius: 11px;
+  cursor: pointer;
+  box-shadow: 0 5px 12px 12px rgba(0, 0, 0, 0.15);
+  transform: translate(0, -5px, 5px);
+  transition: color 1.5s ease-in-out, transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  transform: translate3d(0, 0, 0);
+  box-shadow: none;
+}
