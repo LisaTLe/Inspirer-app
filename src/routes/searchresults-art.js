@@ -1,16 +1,12 @@
-
 import { artworkImageUrl } from "./chiArtApi";
+import "./API.css";
 
 function SearchResults({ results, loading }) {
   if (loading) {
     return (
-      
       <div>
-
         <span className="sr-only">Loading...</span>
-
       </div>
-      
     );
   }
 
@@ -19,27 +15,19 @@ function SearchResults({ results, loading }) {
   }
 
   return (
-   
-   <div>
+    <div className="results-container">
       {results.map((result) => (
-        
-        <div>
-
-          <img src={artworkImageUrl(result.image_id, 250)} alt={result.thumbnail?.alt_text}>
-
-          </img>
+        <div className="results-box">
+          <img
+            className="img-result"
+            src={artworkImageUrl(result.image_id, 250)}
+            alt={result.thumbnail?.alt_text}
+          ></img>
 
           <h1>{result.title} </h1>
-
-
         </div>
-
-  
       ))}
-
-   </div>
-   
-  
+    </div>
   );
 }
 
