@@ -16,7 +16,6 @@ import Tab from '@mui/material/Tab';
 
 export default function navbar() {
   return (
-<<<<<<< HEAD
     <div className="navbar">
       <div className="wrapper">
         <div className="left">
@@ -41,27 +40,6 @@ export default function navbar() {
         </div>
       </div>
     </div>
-=======
-<>
-  <Typography variant="h5" align="left" color="textSecondary" paragraph>
-    THIS IS APPLICATION TITLE
-  </Typography>
-  <CssBaseline />
-  <AppBar position="relative">
-    <tabs align="center"> 
-    <Tab label="Generate"/>
-    <Tab label="Profile"/>
-    <Tab label="Explore Pinterest"/>
-    <Tab label="Shop"/>
-    
-    </tabs>
-    <Toolbar>
-      <Typography variant="h6"> </Typography>
-    </Toolbar>
-  </AppBar>
-   
-    </>
->>>>>>> e8c05ae447478cb6677a2f7c98f5160a14fa43b6
   );
 }
 
