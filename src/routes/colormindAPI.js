@@ -41,6 +41,7 @@ export const Colormind = () => {
     return apiResponse.data.result;
   };
 
+
   return (
     <div>
       <h3> Generate Your Color Pallete Now: </h3>
