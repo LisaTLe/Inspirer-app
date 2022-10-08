@@ -6,7 +6,7 @@ export default function navbar() {
       <div className="wrapper">
         <div className="left">
           <a href="#home" className="title">
-            Name of application here
+            Inspirer: An Art & Design Generator
           </a>
           <a href="#home" className="home-nav">
             Home

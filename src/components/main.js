@@ -29,16 +29,19 @@ import Tab from '@mui/material/Tab';
 function Main() {
     return (
 <div color="accent">
+      <Box pt={3} pl={3} pb={1.7}>
         <Typography variant="h5" align="left" color="textSecondary" paragraph>
-          THIS IS APPLICATION TITLE
+        INSPIRER: An Art & Design Generator
         </Typography>
+      </Box>
+
         <CssBaseline />
         <AppBar position="relative">
           <tabs align="center"> 
           <Tab label="Generate"/>
           <Tab label="Profile"/>
-          <Tab label="Explore Pinterest"/>
           <Tab label="Shop"/>
+          <Tab label="Explore Pinterest"/>
           
           </tabs>
           <Toolbar>
