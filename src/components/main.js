@@ -1,7 +1,4 @@
 import React from "react";
-
-
-
 import {
   Typography,
   AppBar,
@@ -29,23 +26,10 @@ import Tab from '@mui/material/Tab';
 function Main() {
     return (
 <div color="accent">
-        <Typography variant="h5" align="left" color="textSecondary" paragraph>
-          THIS IS APPLICATION TITLE
-        </Typography>
-        <CssBaseline />
-        <AppBar position="relative">
-          <tabs align="center"> 
-          <Tab label="Generate"/>
-          <Tab label="Profile"/>
-          <Tab label="Explore Pinterest"/>
-          <Tab label="Shop"/>
-          
-          </tabs>
-          <Toolbar>
-            <Typography variant="h6"> </Typography>
-          </Toolbar>
-        </AppBar>
-        <main>
+       <main>
+    <div>
+        
+    </div>
           <div>
             <Container maxWidth="sm">
               <Typography
@@ -79,3 +63,5 @@ function Main() {
 }
 
 export default Main;
+
+
