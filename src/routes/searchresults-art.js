@@ -1,5 +1,5 @@
 import { artworkImageUrl } from "./chiArtApi";
-import "./API.css";
+import "./artAPI.css";
 
 function SearchResults({ results, loading }) {
   if (loading) {

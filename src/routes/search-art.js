@@ -1,4 +1,4 @@
-import "./API.css";
+import "./artAPI.css";
 
 function Search({ query, onChange }) {
   return (
