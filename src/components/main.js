@@ -37,8 +37,6 @@ function Main() {
                 gutterBottom
               >
                
-
-                ART
               </Typography>
               </Container>
               </div>
@@ -51,7 +49,7 @@ function Main() {
                 color="textSecondary"
                 paragraph
               >
-                Begin Your Creation:
+                Use the color palette's and art search bar to find design inspiration. Press the color tabs to try different color palettes & search for art pieces that match!
               </Typography>
             </Container>
           </div>
