@@ -17,7 +17,6 @@ import Box from "@mui/material/Box";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 export default function Navbar() {
-  // const [problemFix, setProblemFix] = useState(0);
   return (
     <>
     <Box pt={3} pl={3} pb={3} >
