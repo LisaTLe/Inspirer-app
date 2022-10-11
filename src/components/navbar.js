@@ -11,12 +11,13 @@ import {
   Toolbar,
   Container,
 } from "@material-ui/core";
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Box from '@mui/material/Box';
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Box from "@mui/material/Box";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-export default function navbar() {
+export default function Navbar() {
+  // const [problemFix, setProblemFix] = useState(0);
   return (
     <>
     <Box pt={3} pl={3} pb={3} >
@@ -26,13 +27,14 @@ export default function navbar() {
     </Box>
       <CssBaseline />
       <AppBar position="relative">
-        <tabs align="center">
-          <Tab label="Generate" />
-          <Tab label="Profile" />
+        <Tabs value={0} align="center">
+          <Tab label="Home" to="/" />
+          <Tab label="Sign Up" to="/signup" />
+          <Tab label="Profile" to="/me" />
           <Tab label="Explore Pinterest" />
           <Tab label="Shop" />
-          <Tab label="Install" />
-        </tabs>
+          <Tab label="Install Now" />
+        </Tabs>
         <Toolbar>
           <Typography variant="h6"> </Typography>
         </Toolbar>
