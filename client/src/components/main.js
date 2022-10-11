@@ -20,6 +20,7 @@ import FormLabel from "@mui/material/FormLabel";
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import "./main.css"
 
 
 
@@ -41,9 +42,9 @@ function Main() {
               </Container>
               </div>
 
-              <div>
+              <div className="desc">
               <Container>
-              <Typography
+              <Typography 
                 variant="h5"
                 align="center"
                 color="textSecondary"

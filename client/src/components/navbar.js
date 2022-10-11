@@ -15,25 +15,23 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-
+import "./main.css";
 
 export default function Navbar() {
-  // const [problemFix, setProblemFix] = useState(0);
   return (
     <>
-    <Box pt={3} pl={3} pb={3} >
-      <Typography variant="h5" align="left" color="textSecondary" paragraph>
+    <Box className="title" pt={4} pl={3} pb={3} >
+      <Typography variant="h5" align="left" >
         INSPIRER: An Art & Design Generator
       </Typography>
     </Box>
       <CssBaseline />
-      <AppBar position="relative">
-        <Tabs value={0} align="center">
+      <AppBar className="navBar" position="relative">
+        <Tabs className="navTabs" value={0} align="center">
           <Tab label="Home" to="/" />
           <Tab label="Sign Up" to="/signup" />
           <Tab label="Profile" to="/me" />
-          <Tab label="Explore Pinterest" />
-          <Tab label="Shop" />
+          <Tab label="Shop"/>
           <Tab label="Install Now" />
         </Tabs>
         <Toolbar>
@@ -43,3 +41,4 @@ export default function Navbar() {
     </>
   );
 }
+
