@@ -14,7 +14,7 @@ import Colors2 from "./components/colorGenerator/generatorTab2";
 import Colors3 from "./components/colorGenerator/generatorTab3";
 import Colors4 from "./components/colorGenerator/generatorTab4";
 import Colors5 from "./components/colorGenerator/generatorTab5";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 // import logo from "./logo.svg";
 import "./App.css";
 
