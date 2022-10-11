@@ -49,7 +49,7 @@ const { ApolloServer } = require("apollo-server");
 const typeDefs = require("./schemas/typeDefs");
 const resolvers = require("./schemas/resolvers");
 
-const db = require("./config/connection");
+// const db = require("./config/connection");
 
 const server = new ApolloServer({
   typeDefs,
@@ -57,10 +57,11 @@ const server = new ApolloServer({
   context: ({ req }) => ({ req }),
 });
 
-mongoose.connect(process.env.MONGODB_URI);
+const MONGODB =
+  "mongodb+srv://Lisa_Le:Lisaatlas123@cluster0.qcr1pg5.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose
-  .connect("mongodb://localhost/inspire-gallery", { useNewUrlParser: true })
+  .connect(MONGODB, { useNewUrlParser: true })
   .then(() => {
     console.log("MongoDB Connected");
     return server.listen({ port: process.env.PORT || 4000 });
