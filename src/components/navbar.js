@@ -16,19 +16,13 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-const TitleTypography = createTheme({
-  root: {
-    color: "8ba4b1"
-  }
-})(Typography);
-
 export default function navbar() {
   return (
     <>
     <Box pt={3} pl={3} pb={3} >
-      <TitleTypography variant="h5" align="left" color="textSecondary" paragraph>
+      <Typography variant="h5" align="left" color="textSecondary" paragraph>
         INSPIRER: An Art & Design Generator
-      </TitleTypography>
+      </Typography>
     </Box>
       <CssBaseline />
       <AppBar position="relative">
