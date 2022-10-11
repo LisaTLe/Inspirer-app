@@ -1,11 +1,11 @@
 import * as React from "react";
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-  createHttpLink,
-} from "@apollo/client";
-import { setContext } from "@apollo/client/link/context";
+// import {
+//   ApolloClient,
+//   InMemoryCache,
+//   ApolloProvider,
+//   createHttpLink,
+// } from "@apollo/client";
+// import { setContext } from "@apollo/client/link/context";
 
 //import all components
 import Main from "./components/main";
@@ -23,25 +23,25 @@ import Search from "./routes/search-art";
 import SearchResults from "./routes/searchresults-art";
 import { useState, useEffect } from "react";
 
-const httpLink = createHttpLink({
-  uri: "/graphql",
-});
+// const httpLink = createHttpLink({
+//   uri: "/graphql",
+// });
 
-const authLink = setContext((_, { headers }) => {
-  const token = localStorage.getItem("id_token");
-  return {
-    headers: {
-      ...headers,
-      authorization: token ? `Bearer ${token}` : "",
-    },
-  };
-});
+// const authLink = setContext((_, { headers }) => {
+//   const token = localStorage.getItem("id_token");
+//   return {
+//     headers: {
+//       ...headers,
+//       authorization: token ? `Bearer ${token}` : "",
+//     },
+//   };
+// });
 
-const client = new ApolloClient({
-  // Set up our client to execute the `authLink` middleware prior to making the request to our GraphQL API
-  link: authLink.concat(httpLink),
-  cache: new InMemoryCache(),
-});
+// const client = new ApolloClient({
+//   // Set up our client to execute the `authLink` middleware prior to making the request to our GraphQL API
+//   link: authLink.concat(httpLink),
+//   cache: new InMemoryCache(),
+// });
 
 function App() {
   const [results, setResults] = useState(null);
@@ -74,31 +74,31 @@ function App() {
   }, [query]);
 
   return (
-    <ApolloProvider client={client}>
-      <div>
-        <div className="navbar">
-          <Navbar />
-        </div>
-        <div className="main">
-          <Main />
+    // <ApolloProvider client={client}>
+    <div>
+      <div className="navbar">
+        <Navbar />
+      </div>
+      <div className="main">
+        <Main />
+      </div>
+
+      <div className="inspire-container">
+        <div className="color-generator">
+          <Colors />
+          <Colors2 />
+          <Colors3 />
+          <Colors4 />
+          <Colors5 />
         </div>
 
-        <div className="inspire-container">
-          <div className="color-generator">
-            <Colors />
-            <Colors2 />
-            <Colors3 />
-            <Colors4 />
-            <Colors5 />
-          </div>
-
-          <div className="art-Api">
-            <Search query={query} onChange={(e) => setQuery(e.target.value)} />
-            <SearchResults results={results} loading={loading} />
-          </div>
+        <div className="art-Api">
+          <Search query={query} onChange={(e) => setQuery(e.target.value)} />
+          <SearchResults results={results} loading={loading} />
         </div>
       </div>
-    </ApolloProvider>
+    </div>
+    // </ApolloProvider>
   );
 }
 
