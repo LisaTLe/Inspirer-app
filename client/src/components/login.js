@@ -35,29 +35,29 @@ function Login(props) {
   const [loginUser, { loading }] = useMutation(LOGIN_USER, {
     update(proxy, { data: { loginUser: userData } }) {
       context.login(userData);
-      navigate("/");
+      navigate("/profile");
     },
     variables: { loginInput: values },
   });
 
   return (
-  <Box pt={4} pb={4}>
-    <Container spacing={2} maxWidth="sm" pt={3} style={{fontSize:20}}>
-      <h3>Login</h3>
-      <p>Login to your account below!</p>
-      <Stack spacing={2} paddingBottom={2} pt={3}>
-        <TextField label="email" name="email" onChange={onChange} />
-        <TextField label="password" name="password" onChange={onChange} />
-      </Stack>
-      {errors.map(function (error) {
-        return <Alert severity="error">{error.message}</Alert>;
-      })}
-      <Button variant="contained" onClick={onSubmit}>
-        {" "}
-        Login
-      </Button>
-    </Container>
-  </Box>  
+    <Box pt={4} pb={4}>
+      <Container spacing={2} maxWidth="sm" pt={3} style={{ fontSize: 20 }}>
+        <h3>Login</h3>
+        <p>Login to your account below!</p>
+        <Stack spacing={2} paddingBottom={2} pt={3}>
+          <TextField label="email" name="email" onChange={onChange} />
+          <TextField label="password" name="password" onChange={onChange} />
+        </Stack>
+        {errors.map(function (error) {
+          return <Alert severity="error">{error.message}</Alert>;
+        })}
+        <Button variant="contained" onClick={onSubmit}>
+          {" "}
+          Login
+        </Button>
+      </Container>
+    </Box>
   );
 }
 

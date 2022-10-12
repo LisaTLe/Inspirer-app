@@ -4,5 +4,17 @@
     "projectName": "Reading Loft",
     "colors": "#8fb17d, #7b2c60, #839591",
     "paintName": "Broken and Restored Mutliplication"
+  },
+  {
+    "id": "2",
+    "projectName": "Painting Inspiration",
+    "colors": "#938226, #259a84, #324397",
+    "paintName": "Visions of Eternity"
+  },
+  {
+    "id": "3",
+    "projectName": "Office",
+    "colors": "#f1d76d, #a7bse1, #b5a9f8",
+    "paintName": "Large Interior Form"
   }
 ]

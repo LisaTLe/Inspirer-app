@@ -3,6 +3,7 @@ import { nanoid } from "nanoid";
 import EditRow from "./EditRow";
 import ReadOnlyRow from "./ReadOnlyRow";
 import data from "./seeds.json";
+import "./profile.css";
 
 const Table = () => {
   const [projects, setProjects] = useState(data);
