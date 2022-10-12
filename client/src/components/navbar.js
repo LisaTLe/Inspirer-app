@@ -34,8 +34,8 @@ export default function Navbar() {
 
   return (
     <>
-      <Box className="title" pt={4} pl={3} pb={3}>
-        <Typography variant="h5" align="left">
+      <Box className="title" pt={4} pl={3} pb={3} style={{backgroundColor: "#9BC2A2"}}>
+        <Typography variant="h5" align="left" >
           INSPIRER: An Art & Design Generator
         </Typography>
       </Box>
@@ -63,11 +63,11 @@ export default function Navbar() {
         
         </Box>
 
-        <Tabs className="navTabs" value={0} align="center">
+        <Tabs className="navTabs" value={0} align="center"  >
           <Link to="/" className="link">
             Home
           </Link>
-          <Link to="/profile" className="link">
+          <Link to="/profile" className="link" >
              Profile
           </Link>
           <Link to="/shop" className="link">
