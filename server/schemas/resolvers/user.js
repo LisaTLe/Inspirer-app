@@ -45,13 +45,9 @@ module.exports = {
       //check password
       if (user && (await bcrypt.compare(password, user.password))) {
         //create new token
-        const token = jwt.sign(
-          { user_id: newUser._id, email },
-          "UNSAFE_STRING",
-          {
-            expiresIn: "2h",
-          }
-        );
+        const token = jwt.sign({ user_id: user._id, email }, "UNSAFE_STRING", {
+          expiresIn: "2h",
+        });
         //attach token to user model
         user.token = token;
 
