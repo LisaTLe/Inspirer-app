@@ -21,14 +21,14 @@ import "./main.css";
 export default function Navbar() {
   return (
     <>
-      <Box className="title" pt={4} pl={3} pb={3}>
-        <Typography variant="h5" align="left">
+      <Box className="title" pt={4} pl={3} pb={3} style={{backgroundColor: "#9BC2A2"}}>
+        <Typography variant="h5" align="left" >
           INSPIRER: An Art & Design Generator
         </Typography>
       </Box>
       <CssBaseline />
       <AppBar className="navBar" position="relative" style={{backgroundColor: "#9BC2A2"}}>
-        <Box alignItems="right" sx={{ flexGrow: 1, textAlign: "right" }}>
+        <Box alignItems="right" sx={{ flexGrow: 1, textAlign: "right" }} >
           <Link to="/login" className="link2">
             Login
           </Link>
@@ -37,11 +37,11 @@ export default function Navbar() {
           </Link>
         </Box>
 
-        <Tabs className="navTabs" value={0} align="center">
+        <Tabs className="navTabs" value={0} align="center"  >
           <Link to="/" className="link">
             Home
           </Link>
-          <Link to="/profile" className="link">
+          <Link to="/profile" className="link" >
              Profile
           </Link>
           <Link to="/shop" className="link">
