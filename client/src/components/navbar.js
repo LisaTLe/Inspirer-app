@@ -45,7 +45,7 @@ export default function Navbar() {
           INSPIRER: An Art & Design Generator
         </Typography>
       </Box>
-      <CssBaseline />
+     
       <AppBar
         className="navBar"
         position="relative"
@@ -60,27 +60,27 @@ export default function Navbar() {
             </>
           ) : (
             <>
-              <Link to="/login" className="link2" style={{fontSize: 20}}>
+              <Link to="/login" className="link2" style={{fontSize: 23}}>
                 Login
               </Link>
-              <Link to="/register" className="link2" style={{fontSize: 20}}>
+              <Link to="/register" className="link2" style={{fontSize: 23}}>
                 Register
               </Link>
             </>
           )}
         </Box>
-
-        <Tabs className="navTabs" value={0} align="center" sx={{fontWeight: "bold"}}>
-          <Link to="/" className="link" style={{fontSize: 24}}>
+   
+        <Tabs className="navTabs" align="center" sx={{fontWeight: "bold"}}>
+          <Link to="/" className="link" style={{fontSize: 27}}>
             Home
           </Link>
-          <Link to="/profile" className="link" style={{fontSize: 24}}>
+          <Link to="/profile" className="link" style={{fontSize: 27}}>
             Profile
           </Link>
-          <Link to="https://shop.artic.edu/collections/prints" className="link" style={{fontSize: 24}}>
+          <Link to="https://shop.artic.edu/collections/prints" className="link" style={{fontSize: 27}}>
             Shop
           </Link>
-          <Link to="/install" className="link" style={{fontSize: 24}}>
+          <Link to="/install" className="link" style={{fontSize: 27}}>
             Install
           </Link>
         </Tabs>
