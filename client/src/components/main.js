@@ -17,19 +17,17 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Paper from "@mui/material/Paper";
 import FormLabel from "@mui/material/FormLabel";
-import Box from '@mui/material/Box';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import "./main.css"
-
-
+import Box from "@mui/material/Box";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import "./main.css";
 
 function Main() {
     return (
 <div color="accent">
      
-        <main>
-          <div>
+        <main style={{backgroundColor: "#9BC2A2"}}>
+          <div >
             <Container maxWidth="sm">
               <Typography
                 variant="h2"
@@ -60,5 +58,3 @@ function Main() {
 }
 
 export default Main;
-
-
