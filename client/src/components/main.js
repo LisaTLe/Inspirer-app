@@ -28,8 +28,8 @@ function Main() {
     return (
 <div color="accent">
      
-        <main>
-          <div>
+        <main style={{backgroundColor: "#9BC2A2"}}>
+          <div >
             <Container maxWidth="sm">
               <Typography
                 variant="h2"
