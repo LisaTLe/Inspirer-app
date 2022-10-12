@@ -11,6 +11,7 @@ Whenever we talk about inspiration- art & color can be and are often our muses. 
 
 <img width="988" alt="Screen Shot 2022-10-12 at 12 35 42 AM" src="https://user-images.githubusercontent.com/101853202/195270172-31d9a34b-bc45-4a3c-8a0c-27c22e1742c9.png">
 
+<img width="1208" alt="Screen Shot 2022-10-12 at 1 03 09 AM" src="https://user-images.githubusercontent.com/101853202/195272913-78b2282a-4c00-4568-bc53-45e15378a329.png">
 
 We have developed a powerful interface that helps users quickly view art from the Chicago Institute of Art with random color palette's designed as a web application, built with interactive components that allows you to create your own profile of saved aesthetics
 
