@@ -63,6 +63,7 @@ function Register(props) {
         Sign Up
       </Button>
     </Container>
+  </Box>  
   );
 }
 
