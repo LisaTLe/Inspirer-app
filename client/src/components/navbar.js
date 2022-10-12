@@ -27,9 +27,8 @@ export default function Navbar() {
 
   const onLogout = () => {
     logout();
-    navigate('/');
-
-  }
+    navigate("/");
+  };
   console.log(user);
 
   return (
@@ -46,21 +45,28 @@ export default function Navbar() {
         </Typography>
       </Box>
       <CssBaseline />
-      <AppBar className="navBar" position="relative" style={{ backgroundColor: "#9BC2A2" }}>
+      <AppBar
+        className="navBar"
+        position="relative"
+        style={{ backgroundColor: "#9BC2A2" }}
+      >
         <Box alignItems="right" sx={{ flexGrow: 1, textAlign: "right" }}>
-          { user ?
+          {user ? (
             <>
-
-            <button onClick={onLogout}>Logout</button>
-
+              <Button className="link2" onClick={onLogout}>
+                Logout
+              </Button>
             </>
-          :
-
-          <>
-      
+          ) : (
+            <>
+              <Link to="/login" className="link2">
+                Login
+              </Link>
+              <Link to="/register" className="link2">
+                Register
+              </Link>
             </>
-          }
-
+          )}
         </Box>
 
         <Tabs className="navTabs" value={0} align="center">

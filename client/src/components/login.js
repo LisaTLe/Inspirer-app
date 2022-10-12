@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { useContext, useState } from "react";
 import { AuthContext } from "../context/authContext";
 import { useForm } from "../utils/hooks";
@@ -66,5 +65,3 @@ function Login(props) {
 }
 
 export default Login;
-=======
->>>>>>> 849df0192f718464b3bbef08ba14fb819d155950
