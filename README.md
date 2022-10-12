@@ -3,7 +3,7 @@
 
 Sometimes the hardest step in an art/design project is coming up with ideas- an app like Inspirer can help any artist get the ball rolling!
 
-Whenever we talk about inspiration, art & color can be and are often our muses. From the enormous scales of work in the sistine chapel to the minute details in the gaze of Mona Lisa, to the impromptu yet calculated works of Banksy or the curious splatters created by Jackson Pollock, art has inspired and caused many heads to wonder
+Whenever we talk about inspiration- art & color can be and are often our muses. From the enormous scales of work in the sistine chapel to the minute details in the gaze of Mona Lisa, to the impromptu yet calculated works of Banksy or the curious splatters created by Jackson Pollock, art has inspired and caused many heads to wonder
 
 <img width="1171" alt="Screen Shot 2022-10-12 at 12 33 11 AM" src="https://user-images.githubusercontent.com/101853202/195270039-0ffbb999-ca6b-4101-ac40-09909b2ba431.png">
 
