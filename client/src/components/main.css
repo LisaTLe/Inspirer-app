@@ -4,7 +4,12 @@
 }
 
 .navTabs {
-  margin-left: 38%;
+  margin-left: 28%;
+  padding-bottom: -10%;
+}
+
+.link {
+  padding-left: 3%;
 }
 
 .top {

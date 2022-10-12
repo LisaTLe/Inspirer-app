@@ -39,9 +39,9 @@ export default function Navbar() {
         pt={4}
         pl={3}
         pb={3}
-        style={{ backgroundColor: "#9BC2A2" }}
+        style={{ backgroundColor: "#9BC2A2"}}
       >
-        <Typography variant="h5" align="left">
+        <Typography variant="h5" align="left" style={{fontWeight: "bold", fontSize: 30}}>
           INSPIRER: An Art & Design Generator
         </Typography>
       </Box>
@@ -70,17 +70,17 @@ export default function Navbar() {
           )}
         </Box>
 
-        <Tabs className="navTabs" value={0} align="center" sx={{fontWeight: "bold"}} style={{fontSize: 30}}>
-          <Link to="/" className="link">
+        <Tabs className="navTabs" value={0} align="center" sx={{fontWeight: "bold"}}>
+          <Link to="/" className="link" style={{fontSize: 24}}>
             Home
           </Link>
-          <Link to="/profile" className="link">
+          <Link to="/profile" className="link" style={{fontSize: 24}}>
             Profile
           </Link>
-          <Link to="/shop" className="link">
+          <Link to="/shop" className="link" style={{fontSize: 24}}>
             Shop
           </Link>
-          <Link to="/install" className="link">
+          <Link to="/install" className="link" style={{fontSize: 24}}>
             Install
           </Link>
         </Tabs>
