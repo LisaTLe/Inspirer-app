@@ -33,13 +33,23 @@ export default function Navbar() {
 
   return (
     <>
-      <Box className="title" pt={4} pl={3} pb={3}>
+      <Box
+        className="title"
+        pt={4}
+        pl={3}
+        pb={3}
+        style={{ backgroundColor: "#9BC2A2" }}
+      >
         <Typography variant="h5" align="left">
           INSPIRER: An Art & Design Generator
         </Typography>
       </Box>
       <CssBaseline />
-      <AppBar className="navBar" position="relative">
+      <AppBar
+        className="navBar"
+        position="relative"
+        style={{ backgroundColor: "#9BC2A2" }}
+      >
         <Box alignItems="right" sx={{ flexGrow: 1, textAlign: "right" }}>
           {user ? (
             <>

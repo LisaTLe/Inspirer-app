@@ -23,19 +23,22 @@ import Tab from "@mui/material/Tab";
 import "./main.css";
 
 function Main() {
-  return (
-    <div color="accent">
-      <main>
-        <div>
-          <Container maxWidth="sm">
-            <Typography
-              variant="h2"
-              align="center"
-              color="textPrimary"
-              gutterBottom
-            ></Typography>
-          </Container>
-        </div>
+    return (
+<div color="accent">
+     
+        <main style={{backgroundColor: "#9BC2A2"}}>
+          <div >
+            <Container maxWidth="sm">
+              <Typography
+                variant="h2"
+                align="center"
+                color="textPrimary"
+                gutterBottom
+              >
+               
+              </Typography>
+              </Container>
+              </div>
 
         <div className="desc">
           <Container>
