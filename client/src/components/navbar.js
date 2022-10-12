@@ -17,6 +17,7 @@ import Box from "@mui/material/Box";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Link } from "react-router-dom";
 import "./main.css";
+import { fontFamily } from "@mui/system";
 
 export default function Navbar() {
   return (
@@ -28,16 +29,16 @@ export default function Navbar() {
       </Box>
       <CssBaseline />
       <AppBar className="navBar" position="relative" style={{backgroundColor: "#9BC2A2"}}>
-        <Box alignItems="right" sx={{ flexGrow: 1, textAlign: "right" }}>
-          <Link to="/login" className="link2">
+        <Box alignItems="right" sx={{ flexGrow: 1, textAlign: "right", fontWeight: "bold"}} pl={4}>
+          <Link to="/login" className="link2" style={{fontSize: 20}}>
             Login
           </Link>
-          <Link to="/register" className="link2">
+          <Link to="/register" className="link2" style={{fontSize: 20}}>
             Register
           </Link>
         </Box>
 
-        <Tabs className="navTabs" value={0} align="center">
+        <Tabs className="navTabs" value={0} align="center" sx={{fontWeight: "bold"}} style={{fontSize: 30}}>
           <Link to="/" className="link">
             Home
           </Link>
