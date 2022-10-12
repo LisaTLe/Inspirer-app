@@ -1,45 +1,56 @@
 
-# ~~ INSPIRER ~~   
+# ~~ INSPIRER APP ~~   
 
-Whenever we talk about inspiration, often art is one of the first subjects that comes to mind. From the enormous scale of work in the sistine chapel or the minute details in the gaze of Mona Lisa, to the impromptu yet calculated works of Banksy or the curious splatters created by Jackson Pollock, art has inspired and caused many aheads to wonder.
+Sometimes the hardest step in an art/design project is coming up with ideas- an app like Inspirer can help any artist get the ball rolling!
 
-![Inspirer](./client/public/ins.gif)
+Whenever we talk about inspiration, art & color can be and are often our muses. From the enormous scales of work in the sistine chapel to the minute details in the gaze of Mona Lisa, to the impromptu yet calculated works of Banksy or the curious splatters created by Jackson Pollock, art has inspired and caused many heads to wonder
+
+<img width="1171" alt="Screen Shot 2022-10-12 at 12 33 11 AM" src="https://user-images.githubusercontent.com/101853202/195270039-0ffbb999-ca6b-4101-ac40-09909b2ba431.png">
+
+<img width="977" alt="Screen Shot 2022-10-12 at 12 34 04 AM" src="https://user-images.githubusercontent.com/101853202/195270098-26fdce56-0fed-4f12-9ba0-b6ab65137d9a.png">
+
+<img width="988" alt="Screen Shot 2022-10-12 at 12 35 42 AM" src="https://user-images.githubusercontent.com/101853202/195270172-31d9a34b-bc45-4a3c-8a0c-27c22e1742c9.png">
 
 
-
-
-We have developed a powerful interface that helps users quickly view arts with random colors and designed as a web application, the interactive is allows you to create your very own tour of the museum
+We have developed a powerful interface that helps users quickly view art from the Chicago Institute of Art with random color palette's designed as a web application, built with interactive components that allows you to create your own profile of saved aesthetics
 
 
 ## User Story
 
-As a user, 
-I want to be able to see random art when i typed in search bar 
-So that i can reach paints easily 
+```
+AS A USER, 
+
+I WANT to be able to see visual art when I type keywords of interest into the search bar 
+SO THAT I can seek inspriation from artists 
+I WANT to play with different color pairings
+SO THAT I can visualize a design, mood and overall inspiration
+I WANT to be able to save my desired colors & artworks
+SO THAT I can come back to them 
+I WANT to be able to easily explore the Chicago Institute's Shop 
+SO THAT I can purchase artwork for my desired designs & projects
+```
 
 ## Technology Utilized   ![](https://img.shields.io/github/languages/count/lisaTle/project-3)
 
 - React 
+- Apollo
+- MongoDB
 - Material UI
-- Chicago Art institute API
+- Chicago Art Institute API
 - Color palette API 
+- LoDash
 - GraphQL, Node.js and Express.js 
-- HTML, Css, JavaScript
-
-
-
+- HTML, CSS, JavaScript
+- Webpacks
 
 ## Installation
 
-Install my-project with npm
+Install dependencies with npm i in various folders after git clone
 
 ```bash
-  cd my-project
   npm install @root folder
   npm install @server folder
   npm install @client folder 
-
- 
 ```
     
 ## Usage
@@ -48,9 +59,6 @@ Install my-project with npm
   npm start or 
   npm run develop
 ```
-
-
-
 
 ## Authors
 
@@ -73,5 +81,7 @@ Install my-project with npm
 
 ![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
 ![GPLv3 License](https://img.shields.io/github/languages/count/lisaTle/project-3)
+
+![Inspirer](./client/public/ins.gif)
 
 
