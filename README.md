@@ -20,6 +20,8 @@ We have developed a powerful interface that helps users quickly view art from th
 ```
 AS A USER, 
 
+I WANT to be able to register & log into an application
+SO THAT I can view my profile & saved data 
 I WANT to be able to see visual art when I type keywords of interest into the search bar 
 SO THAT I can seek inspriation from artists 
 I WANT to play with different color pairings
