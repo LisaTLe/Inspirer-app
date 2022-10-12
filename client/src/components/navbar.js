@@ -27,7 +27,7 @@ export default function Navbar() {
         </Typography>
       </Box>
       <CssBaseline />
-      <AppBar className="navBar" position="relative">
+      <AppBar className="navBar" position="relative" style={{backgroundColor: "#9BC2A2"}}>
         <Box alignItems="right" sx={{ flexGrow: 1, textAlign: "right" }}>
           <Link to="/login" className="link2">
             Login
