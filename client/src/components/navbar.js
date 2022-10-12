@@ -15,25 +15,43 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { Link } from "react-router-dom";
 import "./main.css";
 
 export default function Navbar() {
   return (
     <>
-    <Box className="title" pt={4} pl={3} pb={3} >
-      <Typography variant="h5" align="left" >
-        INSPIRER: An Art & Design Generator
-      </Typography>
-    </Box>
+      <Box className="title" pt={4} pl={3} pb={3}>
+        <Typography variant="h5" align="left">
+          INSPIRER: An Art & Design Generator
+        </Typography>
+      </Box>
       <CssBaseline />
       <AppBar className="navBar" position="relative">
+        <Box alignItems="right" sx={{ flexGrow: 1, textAlign: "right" }}>
+          <Link to="/login" className="link2">
+            Login
+          </Link>
+          <Link to="/register" className="link2">
+            Register
+          </Link>
+        </Box>
+
         <Tabs className="navTabs" value={0} align="center">
-          <Tab label="Home" to="/" />
-          <Tab label="Sign Up" to="/signup" />
-          <Tab label="Profile" to="/me" />
-          <Tab label="Shop"/>
-          <Tab label="Install Now" />
+          <Link to="/" className="link">
+            Home
+          </Link>
+          <Link to="/profile" className="link">
+             Profile
+          </Link>
+          <Link to="/shop" className="link">
+             Shop 
+          </Link>
+          <Link to="/install" className="link">
+             Install 
+          </Link>
         </Tabs>
+
         <Toolbar>
           <Typography variant="h6"> </Typography>
         </Toolbar>
@@ -41,4 +59,3 @@ export default function Navbar() {
     </>
   );
 }
-

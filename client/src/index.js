@@ -3,11 +3,23 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import client from "./apolloClient";
+import { ApolloProvider } from "@apollo/react-hooks";
+import { BrowserRouter } from "react-router-dom";
+import { AuthProvider } from "./context/authContext";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <AuthProvider>
+    <ApolloProvider client={client}>
+      <BrowserRouter>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+        ,
+      </BrowserRouter>
+    </ApolloProvider>
+    ,
+  </AuthProvider>,
   document.getElementById("root")
 );
 
