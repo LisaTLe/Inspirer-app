@@ -25,7 +25,7 @@ SO THAT I can view my profile & saved data
 I WANT to be able to see visual art when I type keywords of interest into the search bar 
 SO THAT I can seek inspriation from artists 
 I WANT to play with different color pairings
-SO THAT I can visualize a design, mood and overall inspiration
+SO THAT I can visualize a design, mood and overall idea
 I WANT to be able to save my desired colors & artworks
 SO THAT I can come back to them 
 I WANT to be able to easily explore the Chicago Institute's Shop 
