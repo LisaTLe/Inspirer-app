@@ -1,8 +1,6 @@
 import * as React from "react";
 import { Routes, Route } from "react-router-dom";
 
-
-
 //import all components
 import Main from "./components/main";
 import Colors from "./components/colorGenerator/generatorTab";
@@ -10,7 +8,7 @@ import Colors2 from "./components/colorGenerator/generatorTab2";
 import Colors3 from "./components/colorGenerator/generatorTab3";
 import Colors4 from "./components/colorGenerator/generatorTab4";
 import Colors5 from "./components/colorGenerator/generatorTab5";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar";
 import Register from "./components/signup";
 import Profile from "./components/profile";
 import Login from "./components/login";
@@ -61,10 +59,13 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path='/shop' component={() => { 
+     window.location.href = 'https://shop.artic.edu/collections/prints'; 
+     return null;
+}}/>
         </Routes>
       </div>
       <div className="main">
-        <Main />
       </div>
 
       <div className="inspire-container">

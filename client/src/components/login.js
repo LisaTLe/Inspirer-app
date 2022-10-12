@@ -8,47 +8,43 @@ import { gql } from "graphql-tag";
 import { useNavigate } from "react-router-dom";
 
 const LOGIN_USER = gql`
-    mutation login(
-        $loginInput: LoginInput
-    ) {
-        loginUser(
-            loginInput: $loginInput
-        ){
-            email
-            username
-            token
-        }
+  mutation login($loginInput: LoginInput) {
+    loginUser(loginInput: $loginInput) {
+      email
+      username
+      token
     }
-`
+  }
+`;
 
 function Login(props) {
-    let navigate = useNavigate();
-    const context = useContext(AuthContext);
-    const [ errors, setError] = useState([]);
+  let navigate = useNavigate();
+  const context = useContext(AuthContext);
+  const [errors, setError] = useState([]);
 
-    function loginUserCallback() {
-        loginUser();
-    }
+  function loginUserCallback() {
+    console.log("callback hit");
+    loginUser();
+  }
 
-    const {onChange, onSubmit, values } = useForm(loginUserCallback, {
-        email: '',
-        password: ''
-    });
+  const { onChange, onSubmit, values } = useForm(loginUserCallback, {
+    email: "",
+    password: "",
+  });
 
-    const [loginUser, { loading }] = useMutation(LOGIN_USER, {
-        update(proxy, { data: { loginUser: userData}}) {
-            context.login(userData);
-            navigate('/');
-        },
-        variables: { loginInput: values }
-    })
+  const [loginUser, { loading }] = useMutation(LOGIN_USER, {
+    update(proxy, { data: { loginUser: userData } }) {
+      context.login(userData);
+      navigate("/");
+    },
+    variables: { loginInput: values },
+  });
 
-    return (
-      <Container spacing={2} maxWidth="sm">
+  return (
+    <Container spacing={2} maxWidth="sm">
       <h3>Login</h3>
       <p>Login to your account below!</p>
       <Stack spacing={2} paddingBottom={2}>
-      
         <TextField label="email" name="email" onChange={onChange} />
         <TextField label="password" name="password" onChange={onChange} />
       </Stack>
@@ -60,8 +56,7 @@ function Login(props) {
         Login
       </Button>
     </Container>
-    );
-
+  );
 }
 
 export default Login;
