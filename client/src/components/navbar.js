@@ -16,7 +16,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import "./main.css";
 import { fontFamily } from "@mui/system";
 import { AuthContext } from "../context/authContext";
