@@ -12,7 +12,7 @@ import Navbar from "./components/navbar";
 import Register from "./components/signup";
 import Profile from "./components/profilePage/profile";
 import Login from "./components/login";
-
+import Shop from "./components/shop";
 // import logo from "./logo.svg";
 import "./App.css";
 
@@ -60,14 +60,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route
-            path="/shop"
-            component={() => {
-              window.location.href =
-                "https://shop.artic.edu/collections/prints";
-              return null;
-            }}
-          />
+          <Route path="/shop" element={<Shop />} />
         </Routes>
       </div>
       <div className="main"></div>

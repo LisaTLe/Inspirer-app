@@ -4,7 +4,7 @@ import { useForm } from "../utils/hooks";
 import { useMutation } from "@apollo/react-hooks";
 
 //materialUI
-import { TextField, Button, Container, Stack, Alert } from "@mui/material";
+import { TextField, Box, Button, Container, Stack, Alert } from "@mui/material";
 
 import { gql } from "graphql-tag";
 import { useNavigate } from "react-router-dom";
@@ -47,7 +47,8 @@ function Register(props) {
   });
 
   return (
-    <Container spacing={2} maxWidth="sm" pt={3}>
+   <Box pt={4} pb={4}> 
+    <Container spacing={2} maxWidth="sm" pt={3} style={{fontSize:20}}>
       <h3>Register</h3>
       <p>Sign up for an account below!</p>
       <Stack spacing={2} paddingBottom={2} pt={3}>
@@ -63,6 +64,7 @@ function Register(props) {
         Sign Up
       </Button>
     </Container>
+  </Box>  
   );
 }
 

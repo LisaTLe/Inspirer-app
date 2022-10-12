@@ -4,7 +4,7 @@
 }
 
 .navTabs {
-  margin-left: 28%;
+  margin-left: 30%;
 }
 
 .link {
@@ -29,4 +29,19 @@
   font-size: 14px;
   float: left;
   margin-left: 10px;
+}
+
+.desc {
+  color: white;
+  padding-top: 1%;
+}
+
+.tabTabs {
+  padding-bottom: -10%;
+}
+
+.shopLink {
+  margin-left: 30%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }

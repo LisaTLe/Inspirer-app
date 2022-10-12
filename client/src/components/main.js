@@ -24,12 +24,11 @@ import "./main.css";
 
 function Main() {
     return (
-<div color="accent">
-     
+<div>
         <main style={{backgroundColor: "#9BC2A2"}}>
-          <div >
+          <div style={{backgroundColor: "#9BC2A2"}}>
             <Container maxWidth="sm">
-              <Typography
+              <Typography className="tabTabs"
                 variant="h2"
                 align="center"
                 color="textPrimary"
@@ -40,15 +39,15 @@ function Main() {
               </Container>
               </div>
 
-              <div className="desc">
-              <Container>
+              <div>
+              <Container className="desc">
               <Typography 
                 variant="h5"
                 align="center"
-                color="textSecondary"
+                color="#ffffff"
                 paragraph
               >
-                Use the color palette's and search bar below to find design inspiration. Press the color tabs to try out different colors, and use the search function to explore Chicago Art Institute's art collection! Create your aesthetic dream ☁️
+                Use the color palette's and search bar below to find design inspiration. Press the color tabs to try out different colors, and use the search function to explore Chicago Art Institute's art collection! Create your aesthetic ☁️
               </Typography>
             </Container>
           </div>
