@@ -59,10 +59,13 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path='/shop' component={() => { 
+     window.location.href = 'https://shop.artic.edu/collections/prints'; 
+     return null;
+}}/>
         </Routes>
       </div>
       <div className="main">
-        <Main />
       </div>
 
       <div className="inspire-container">

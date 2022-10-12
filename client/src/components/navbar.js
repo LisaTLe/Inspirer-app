@@ -77,7 +77,7 @@ export default function Navbar() {
           <Link to="/profile" className="link" style={{fontSize: 24}}>
             Profile
           </Link>
-          <Link to="/shop" className="link" style={{fontSize: 24}}>
+          <Link to="https://shop.artic.edu/collections/prints" className="link" style={{fontSize: 24}}>
             Shop
           </Link>
           <Link to="/install" className="link" style={{fontSize: 24}}>
