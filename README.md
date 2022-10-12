@@ -1,18 +1,21 @@
 
 # ~~ INSPIRER ~~   
 
+Whenever we talk about inspiration, often art is one of the first subjects that comes to mind. From the enormous scale of work in the sistine chapel or the minute details in the gaze of Mona Lisa, to the impromptu yet calculated works of Banksy or the curious splatters created by Jackson Pollock, art has inspired and caused many aheads to wonder.
+
+![Inspirer](./client/public/ins.gif)
 
 
 
-## Summary
 
-PlaceHolder --- What your application does,
-Why you used the technologies you used,
-Some of the challenges you faced and features you hope to implement in the future
+We have developed a powerful interface that helps users quickly view arts with random colors and designed as a web application, the interactive is allows you to create your very own tour of the museum
+
 
 ## User Story
 
-placeholderplaceholder
+As a user, 
+I want to be able to see random art when i typed in search bar 
+So that i can reach paints easily 
 
 ## Technology Utilized   ![](https://img.shields.io/github/languages/count/lisaTle/project-3)
 
@@ -21,6 +24,7 @@ placeholderplaceholder
 - Chicago Art institute API
 - Color palette API 
 - GraphQL, Node.js and Express.js 
+- HTML, Css, JavaScript
 
 
 
@@ -38,15 +42,14 @@ Install my-project with npm
  
 ```
     
-## Usage/Examples
+## Usage
 
 ```javascript
   npm start or 
   npm run develop
 ```
 
-Provide instructions and examples so users/contributors can use the project. 
-This will make it easy for them in case they encounter a problem – they will always have a place to reference what is expected.
+
 
 
 ## Authors
