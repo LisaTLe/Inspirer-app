@@ -50,7 +50,7 @@ function Main() {
                 color="textSecondary"
                 paragraph
               >
-                Use the color palette's and art search bar to find design inspiration. Press the color tabs to try different color palettes & search for art pieces that match!
+                Use the color palette's and search bar below to find design inspiration. Press the color tabs to try out different colors, and use the search function to explore Chicago Art Institute's art collection! Create your aesthetic dream ☁️
               </Typography>
             </Container>
           </div>
