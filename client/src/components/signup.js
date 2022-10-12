@@ -8,7 +8,6 @@ import { TextField, Button, Container, Stack, Alert } from "@mui/material";
 
 import { gql } from "graphql-tag";
 import { useNavigate } from "react-router-dom";
-import { values } from "lodash";
 
 const REGISTER_USER = gql`
   mutation Mutation($registerInput: RegisterInput) {
@@ -26,7 +25,8 @@ function Register(props) {
   const [errors, setErrors] = useState([]);
 
   function registerUserCallback() {
-    console.log("callback hit");
+    console.log("Callback hit");
+    registerUser();
   }
 
   const { onChange, onSubmit, values } = useForm(registerUserCallback, {
