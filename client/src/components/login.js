@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../context/authContext";
 import { useForm } from "../utils/hooks";
 import { useMutation } from "@apollo/react-hooks";
-import { TextField, Button, Container, Stack, Alert } from "@mui/material";
+import { TextField, Box, Button, Container, Stack, Alert } from "@mui/material";
 
 import { gql } from "graphql-tag";
 import { useNavigate } from "react-router-dom";
@@ -41,10 +41,11 @@ function Login(props) {
   });
 
   return (
-    <Container spacing={2} maxWidth="sm">
+  <Box pt={4} pb={4}>
+    <Container spacing={2} maxWidth="sm" pt={3} style={{fontSize:20}}>
       <h3>Login</h3>
       <p>Login to your account below!</p>
-      <Stack spacing={2} paddingBottom={2}>
+      <Stack spacing={2} paddingBottom={2} pt={3}>
         <TextField label="email" name="email" onChange={onChange} />
         <TextField label="password" name="password" onChange={onChange} />
       </Stack>
@@ -56,6 +57,7 @@ function Login(props) {
         Login
       </Button>
     </Container>
+  </Box>  
   );
 }
 
