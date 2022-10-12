@@ -40,23 +40,21 @@ function Main() {
               </Container>
               </div>
 
-        <div className="desc">
-          <Container>
-            <Typography
-              variant="h5"
-              align="center"
-              color="textSecondary"
-              paragraph
-            >
-              Use the color palette's and art search bar to find design
-              inspiration. Press the color tabs to try different color palettes
-              & search for art pieces that match!
-            </Typography>
-          </Container>
-        </div>
-      </main>
-    </div>
-  );
+              <div className="desc">
+              <Container>
+              <Typography 
+                variant="h5"
+                align="center"
+                color="textSecondary"
+                paragraph
+              >
+                Use the color palette's and search bar below to find design inspiration. Press the color tabs to try out different colors, and use the search function to explore Chicago Art Institute's art collection! Create your aesthetic dream ☁️
+              </Typography>
+            </Container>
+          </div>
+        </main>
+      </div>
+    );
 }
 
 export default Main;
