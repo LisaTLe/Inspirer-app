@@ -1,5 +1,6 @@
 import { useContext } from "react";
-import { AuthContext } from "../context/authContext";
+import { AuthContext } from "../../context/authContext";
+import Table from "./table";
 
 function Profile() {
   const { user, logout } = useContext(AuthContext);
@@ -9,7 +10,8 @@ function Profile() {
       <h1>Welcome To Your Inspirer Board: </h1>
       {user ? (
         <>
-          <p>{user.username} is logged in!</p>
+          <p>{user.email} is logged in!</p>
+          <Table />
         </>
       ) : (
         <>

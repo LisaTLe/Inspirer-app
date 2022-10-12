@@ -10,7 +10,7 @@ import Colors4 from "./components/colorGenerator/generatorTab4";
 import Colors5 from "./components/colorGenerator/generatorTab5";
 import Navbar from "./components/navbar";
 import Register from "./components/signup";
-import Profile from "./components/profile";
+import Profile from "./components/profilePage/profile";
 import Login from "./components/login";
 import Shop from "./components/shop";
 // import logo from "./logo.svg";
@@ -63,8 +63,7 @@ function App() {
           <Route path="/shop" element={<Shop />} />
         </Routes>
       </div>
-      <div className="main">
-      </div>
+      <div className="main"></div>
 
       <div className="inspire-container">
         <div className="color-generator">

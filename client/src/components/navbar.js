@@ -41,7 +41,11 @@ export default function Navbar() {
         pb={4}
         style={{ backgroundColor: "#9BC2A2"}}
       >
-        <Typography variant="h5" align="left" style={{fontWeight: "bold", fontSize: 30}}>
+        <Typography
+          variant="h5"
+          align="left"
+          style={{ fontWeight: "bold", fontSize: 30 }}
+        >
           INSPIRER: An Art & Design Generator
         </Typography>
       </Box>
@@ -51,7 +55,11 @@ export default function Navbar() {
         position="relative"
         style={{ backgroundColor: "#9BC2A2" }}
       >
-        <Box alignItems="right" sx={{ flexGrow: 1, textAlign: "right", fontWeight: "bold"}} pl={4}>
+        <Box
+          alignItems="right"
+          sx={{ flexGrow: 1, textAlign: "right", fontWeight: "bold" }}
+          pl={4}
+        >
           {user ? (
             <>
               <Button className="link2" onClick={onLogout}>
