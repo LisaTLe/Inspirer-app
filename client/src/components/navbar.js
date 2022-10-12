@@ -37,8 +37,8 @@ export default function Navbar() {
       <Box
         className="title"
         pt={4}
-        pl={3}
-        pb={3}
+        pl={4}
+        pb={4}
         style={{ backgroundColor: "#9BC2A2"}}
       >
         <Typography variant="h5" align="left" style={{fontWeight: "bold", fontSize: 30}}>
