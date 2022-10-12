@@ -1,6 +1,8 @@
 import * as React from "react";
 import { Routes, Route } from "react-router-dom";
 
+
+
 //import all components
 import Main from "./components/main";
 import Colors from "./components/colorGenerator/generatorTab";
