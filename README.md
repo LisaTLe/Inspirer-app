@@ -1,5 +1,4 @@
-
-# ~~ INSPIRER APP ~~   
+# ~~ INSPIRER APP ~~
 
 Sometimes the hardest step in an art/design project is coming up with ideas- an app like Inspirer can help any artist get the ball rolling!
 
@@ -15,33 +14,37 @@ We have developed a powerful interface that helps users quickly view art from th
 
 <img width="1208" alt="Screen Shot 2022-10-12 at 1 03 09 AM" src="https://user-images.githubusercontent.com/101853202/195272913-78b2282a-4c00-4568-bc53-45e15378a329.png">
 
+## Deployed Link
+
+[Heroku Link](https://inspirer-app.herokuapp.com/)
+
 ## User Story
 
 ```
-AS A USER, 
+AS A USER,
 
 I WANT to be able to register & log into an application
-SO THAT I can view my profile & saved data 
-I WANT to be able to see visual art when I type keywords of interest into the search bar 
-SO THAT I can seek inspriation from artists 
+SO THAT I can view my profile & saved data
+I WANT to be able to see visual art when I type keywords of interest into the search bar
+SO THAT I can seek inspriation from artists
 I WANT to play with different color pairings
 SO THAT I can visualize a design, mood and overall idea
 I WANT to be able to save my desired colors & artworks
-SO THAT I can come back to them 
-I WANT to be able to easily explore the Chicago Institute's Shop 
+SO THAT I can come back to them
+I WANT to be able to easily explore the Chicago Institute's Shop
 SO THAT I can purchase artwork for my desired designs & projects
 ```
 
-## Technology Utilized   ![](https://img.shields.io/github/languages/count/lisaTle/project-3)
+## Technology Utilized ![](https://img.shields.io/github/languages/count/lisaTle/project-3)
 
-- React 
+- React
 - Apollo
 - MongoDB
 - Material UI
 - Chicago Art Institute API
-- Color palette API 
+- Color palette API
 - LoDash
-- GraphQL, Node.js and Express.js 
+- GraphQL, Node.js and Express.js
 - HTML, CSS, JavaScript
 - Webpacks
 
@@ -52,13 +55,13 @@ Install dependencies with npm i in various folders after git clone
 ```bash
   npm install @root folder
   npm install @server folder
-  npm install @client folder 
+  npm install @client folder
 ```
-    
+
 ## Usage
 
 ```javascript
-  npm start or 
+  npm start or
   npm run develop
 ```
 
@@ -70,20 +73,15 @@ Install dependencies with npm i in various folders after git clone
 - [@Dosiano Torrez](https://github.com/DosTorrez)![](https://img.shields.io/github/followers/DosTorrez?style=social)
 - [@Can Sardaslar](https://github.com/sardaslar) ![](https://img.shields.io/github/followers/sardaslar?style=social)
 
-
 ## Deployed Application
+
 ---https
 
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-
-
-
 ![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
 ![GPLv3 License](https://img.shields.io/github/languages/count/lisaTle/project-3)
 
 ![Inspirer](./client/public/ins.gif)
-
-
