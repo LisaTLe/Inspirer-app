@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   Typography,
   AppBar,
@@ -10,6 +10,7 @@ import {
   Grid,
   Toolbar,
   Container,
+  Button,
 } from "@material-ui/core";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -17,8 +18,19 @@ import Box from "@mui/material/Box";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Link } from "react-router-dom";
 import "./main.css";
+import { AuthContext } from "../context/authContext";
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
+  let navigate = useNavigate();
+  const { user, logout } = useContext(AuthContext);
+
+  const onLogout = () => {
+    logout();
+    navigate("/");
+  };
+  console.log(user);
+
   return (
     <>
       <Box className="title" pt={4} pl={3} pb={3}>
@@ -29,12 +41,22 @@ export default function Navbar() {
       <CssBaseline />
       <AppBar className="navBar" position="relative">
         <Box alignItems="right" sx={{ flexGrow: 1, textAlign: "right" }}>
-          <Link to="/login" className="link2">
-            Login
-          </Link>
-          <Link to="/register" className="link2">
-            Register
-          </Link>
+          {user ? (
+            <>
+              <Button className="link2" onClick={onLogout}>
+                Logout
+              </Button>
+            </>
+          ) : (
+            <>
+              <Link to="/login" className="link2">
+                Login
+              </Link>
+              <Link to="/register" className="link2">
+                Register
+              </Link>
+            </>
+          )}
         </Box>
 
         <Tabs className="navTabs" value={0} align="center">
@@ -42,13 +64,13 @@ export default function Navbar() {
             Home
           </Link>
           <Link to="/profile" className="link">
-             Profile
+            Profile
           </Link>
           <Link to="/shop" className="link">
-             Shop 
+            Shop
           </Link>
           <Link to="/install" className="link">
-             Install 
+            Install
           </Link>
         </Tabs>
 
