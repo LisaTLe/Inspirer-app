@@ -111,10 +111,10 @@ const Table = () => {
         <table>
           <thead>
             <tr>
-              <th>Project Title:</th>
-              <th>Colors (Hex #):</th>
-              <th>Painting Name:</th>
-              <th>Actions: </th>
+              <th className="header">Project Title:</th>
+              <th className="header">Colors (Hex #):</th>
+              <th className="header">Painting Name:</th>
+              <th className="header">Actions: </th>
             </tr>
           </thead>
           <tbody>

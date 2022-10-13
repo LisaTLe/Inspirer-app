@@ -8,6 +8,7 @@ function Profile() {
 
   return (
     <>
+    <div className="welcome">
       <h1 className="profileTitle"> Welcome To Your Inspirer Board: </h1>
       {user ? (
         <>
@@ -19,6 +20,7 @@ function Profile() {
           <p>There Is No User Data</p>
         </>
       )}
+    </div>
     </>
   );
 }
