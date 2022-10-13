@@ -57,6 +57,14 @@ const server = new ApolloServer({
   context: ({ req }) => ({ req }),
 });
 
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../client/build')));
+}
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
+
 const MONGODB =
   "mongodb+srv://Lisa_Le:Lisaatlas123@cluster0.qcr1pg5.mongodb.net/?retryWrites=true&w=majority";
 
