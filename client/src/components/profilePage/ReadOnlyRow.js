@@ -1,12 +1,12 @@
 import React from "react";
+import "./profile.css"
 
 const ReadOnlyRow = ({ project, handleEditClick, handleDeleteClick }) => {
   return (
-    <div>
       <tr>
-        <td>{project.projectName}</td>
-        <td>{project.colors}</td>
-        <td>{project.paintName}</td>
+        <td className="render-name">{project.projectName}</td>
+        <td className="render">{project.colors}</td>
+        <td className="render">{project.paintName}</td>
         <td>
           <button
             type="button"
@@ -19,7 +19,6 @@ const ReadOnlyRow = ({ project, handleEditClick, handleDeleteClick }) => {
           </button>
         </td>
       </tr>
-    </div>
   );
 };
 

@@ -139,8 +139,8 @@ const Table = () => {
         </table>
       </form>
 
-      <h2> Add an Inspiration: </h2>
-      <form onSubmit={handleAddFormSubmit}>
+      <h2 className="addProject"> Add an Inspiration: </h2>
+      <form className="addForm" pl={3} onSubmit={handleAddFormSubmit}>
         <input
           type="text"
           name="projectName"
@@ -159,7 +159,7 @@ const Table = () => {
           placeholder="Enter Painting's Name..."
           onChange={handleAddFormChange}
         />
-        <button type="submit">Add</button>
+        <button className="addButton" type="submit">Add</button>
       </form>
     </div>
   );
