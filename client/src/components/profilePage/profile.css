@@ -38,10 +38,6 @@ td {
   background-color: #9bc2a2;
 }
 
-tr {
-  font-size: 10px;
-}
-
 .render, .render-name {
   font-size: 23px;
 }
@@ -52,7 +48,7 @@ tr {
 }
 
 .header {
-  font-size: 15px;
+  font-size: 25px;
 }
 
 form {
@@ -70,14 +66,16 @@ form * {
 }
 
 .profileTitle {
-  margin-left: 30%;
+  margin-left: 33%;
   margin-top: 2%;
+  font-size: 27px;
 }
 
 .userTitle {
   margin-left: 38%;
   margin-top: 1%;
   margin-bottom: 2%;
+  font-size: 18px;
 }
 
 button {
