@@ -44,7 +44,7 @@ export default function Navbar() {
         <Typography
           variant="h5"
           align="left"
-          style={{ fontWeight: "bold", fontSize: 30 }}
+          style={{ fontWeight: "bold", fontSize: 37 }}
         >
           INSPIRER: An Art & Design Generator
         </Typography>
